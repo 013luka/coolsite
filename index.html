@@ -3,57 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Script Hub</title>
+    <title>ScriptBlox</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Roblox Script Hub</h1>
-        <p>Create, share, and explore Roblox scripts!</p>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <span>ScriptBlox</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#executors">Executors</a></li>
+                    <li><a href="#account">Account</a></li>
+                </ul>
+            </nav>
+            <div class="user-status">
+                <span>231 Users Online</span>
+                <span>1568 Guests Online</span>
+            </div>
+        </div>
     </header>
-    <div class="container">
-        <section id="register">
-            <h2>Create an Account</h2>
-            <form id="registerForm">
-                <div class="form-group">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    <main>
+        <section id="search">
+            <h1>ScriptBlox</h1>
+            <p>Search the best Lua scripts available in the community uploaded by users!</p>
+            <div class="search-bar">
+                <input type="text" placeholder='Try "admin"'>
+                <button>Search</button>
+                <div class="toggle">
+                    <label for="free-toggle">Free</label>
+                    <input type="checkbox" id="free-toggle">
                 </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Register</button>
-                </div>
-            </form>
-        </section>
-        
-        <section id="postScript">
-            <h2>Post a Script</h2>
-            <form id="postScriptForm">
-                <div class="form-group">
-                    <label for="scriptTitle">Script Title:</label>
-                    <input type="text" id="scriptTitle" name="scriptTitle" placeholder="Enter script title" required>
-                </div>
-                <div class="form-group">
-                    <label for="scriptContent">Script Content:</label>
-                    <textarea id="scriptContent" name="scriptContent" rows="8" placeholder="Paste your script here..." required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Post Script</button>
-                </div>
-            </form>
-        </section>
-
-        <section id="scripts">
-            <h2>Recent Scripts</h2>
-            <div class="script">
-                <h3>Example Script Title</h3>
-                <p>Script content will appear here...</p>
             </div>
         </section>
-    </div>
-    <script src="script.js"></script>
+    </main>
+    <footer>
+        <p>&copy; 2024 ScriptBlox. All rights reserved.</p>
+    </footer>
 </body>
 </html>
