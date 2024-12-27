@@ -1,29 +1,9 @@
-// Register form handling
-document.getElementById('registerForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    alert(`User registered:\nUsername: ${username}\n(Password handling requires back-end security!)`);
-});
-
-// Post script form handling
-document.getElementById('postScriptForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const scriptTitle = document.getElementById('scriptTitle').value;
-    const scriptContent = document.getElementById('scriptContent').value;
-
-    // Add the new script to the recent scripts section
-    const scriptSection = document.getElementById('scripts');
-    const newScript = document.createElement('div');
-    newScript.classList.add('script');
-    newScript.innerHTML = `
-        <h3>${scriptTitle}</h3>
-        <p>${scriptContent}</p>
-    `;
-    scriptSection.appendChild(newScript);
-
-    // Clear form inputs
-    document.getElementById('postScriptForm').reset();
-    alert('Script posted successfully!');
+// Script for future interactivity
+document.querySelector(".search-bar button").addEventListener("click", function () {
+    const searchTerm = document.querySelector(".search-bar input").value;
+    if (searchTerm.trim() === "") {
+        alert("Please enter a search term.");
+    } else {
+        alert(`Searching for: ${searchTerm}`);
+    }
 });
